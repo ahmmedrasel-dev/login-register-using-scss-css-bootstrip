@@ -1,0 +1,5 @@
+@mixin boxsize ($width, $height, $background) {
+  width: $width;
+  height: $height;
+  background: $background;
+}

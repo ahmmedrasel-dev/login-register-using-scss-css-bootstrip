@@ -1,0 +1,38 @@
+@import "../variables/color";
+@import "../mixins/boxsize";
+@import "../mixins/section";
+
+
+#login {
+  @include section(100%, 100vh, #e5e5e5);
+  position: relative;
+}
+
+.content {
+  @include boxsize(570px, 450px, $texbgcolor);
+  text-align: center;
+
+  h2 {
+    line-height: 450px;
+    font-size: 72px;
+    font-weight: 400;
+    color: $bgtextcolor;
+  }
+}
+
+
+.formbox {
+  @include boxsize(570px, auto, $formbgcolor);
+  padding: 80px 80px;
+
+  h2 {
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+}
+
+.btn-color {
+  background: $btncolor;
+  color: $bgtextcolor;
+}
